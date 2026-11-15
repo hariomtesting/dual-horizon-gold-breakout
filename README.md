@@ -21,7 +21,7 @@ An institutional-grade algorithmic execution architecture engineered for **Spot 
   author={Kumar, Hari Om and Antigravity},
   journal={SSRN Electronic Working Paper Series},
   year={2026},
-  url={https://ssrn.com/abstract=dual-horizon-gold-2026}
+  url={https://papers.ssrn.com/abstract=7708298}
 }
 ```
 

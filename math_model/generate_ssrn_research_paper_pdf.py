@@ -49,7 +49,7 @@ class SSRNNumberedCanvas(canvas.Canvas):
         self.setStrokeColor(colors.HexColor("#dddddd"))
         self.setLineWidth(0.5)
         self.line(54, 45, 558, 45)
-        self.drawString(54, 32, "Electronic copy available at: https://ssrn.com/abstract=dual-horizon-gold-2026")
+        self.drawString(54, 32, "Electronic copy available at: https://ssrn.com/abstract=7708298")
         page_text = f"Page {self._pageNumber} of {page_count}"
         self.drawRightString(558, 32, page_text)
         self.restoreState()
