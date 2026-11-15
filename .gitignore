@@ -1,0 +1,23 @@
+# Credentials and private configuration
+config/mt5_account.json
+config/telegram_config.json
+*.env
+*.key
+*.secret
+
+# Runtime states and logs
+execution/testing_algo_state.json
+execution/live_state.json
+*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# OS artifacts
+.DS_Store
+Thumbs.db

@@ -1,0 +1,53 @@
+[
+  {
+    "portfolio": "Solo Gold (1.0% Risk)",
+    "symbols": [
+      "XAUUSD"
+    ],
+    "initial_balance": 10000.0,
+    "final_balance": 26161.289442857098,
+    "net_profit": 16161.289442857098,
+    "total_return_pct": 161.612894428571,
+    "max_dd": 1.7753084293043342,
+    "calmar": 91.0336997002262,
+    "win_rate": 58.44155844155844,
+    "t1_rate": 98.05194805194806,
+    "profit_factor": 7.761670363681952,
+    "total_trades": 154
+  },
+  {
+    "portfolio": "Dual-Asset: Gold + BTC (1.0% Risk)",
+    "symbols": [
+      "XAUUSD",
+      "BTCUSD"
+    ],
+    "initial_balance": 10000.0,
+    "final_balance": 58316.623782971365,
+    "net_profit": 48316.623782971365,
+    "total_return_pct": 483.1662378297136,
+    "max_dd": 1.6694233602230175,
+    "calmar": 289.42103563542304,
+    "win_rate": 56.81818181818182,
+    "t1_rate": 98.37662337662337,
+    "profit_factor": 6.807826071656595,
+    "total_trades": 308
+  },
+  {
+    "portfolio": "Tri-Asset: Gold + BTC + NAS100 (1.0% Risk)",
+    "symbols": [
+      "XAUUSD",
+      "BTCUSD",
+      "NAS100.r"
+    ],
+    "initial_balance": 10000.0,
+    "final_balance": 114767.78646670668,
+    "net_profit": 104767.78646670668,
+    "total_return_pct": 1047.6778646670666,
+    "max_dd": 2.3843243574282855,
+    "calmar": 439.40240823487795,
+    "win_rate": 55.55555555555556,
+    "t1_rate": 98.29059829059828,
+    "profit_factor": 5.345287461958378,
+    "total_trades": 468
+  }
+]

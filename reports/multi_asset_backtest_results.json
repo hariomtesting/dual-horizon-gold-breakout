@@ -1,0 +1,93 @@
+[
+  {
+    "symbol": "BTCUSD",
+    "name": "Bitcoin Bullion (24/7)",
+    "is_24_7": true,
+    "total_trades": 551,
+    "win_rate": 48.63883847549909,
+    "tp1_rate": 91.65154264972777,
+    "profit_factor": 2.471688074100681,
+    "total_return_pct": 5503.279390799502,
+    "max_dd": 10.862507685162933,
+    "calmar": 506.63065567414185,
+    "final_equity": 560327.9390799502
+  },
+  {
+    "symbol": "BTCUSD",
+    "name": "Bitcoin (10-16 IST Window)",
+    "is_24_7": false,
+    "total_trades": 198,
+    "win_rate": 56.56565656565656,
+    "tp1_rate": 98.48484848484848,
+    "profit_factor": 6.2184353870674585,
+    "total_return_pct": 1189.1130096815,
+    "max_dd": 3.308092138596265,
+    "calmar": 359.45583129558196,
+    "final_equity": 128911.30096814998
+  },
+  {
+    "symbol": "ETHUSD",
+    "name": "Ethereum Bullion (24/7)",
+    "is_24_7": true,
+    "total_trades": 555,
+    "win_rate": 45.585585585585584,
+    "tp1_rate": 93.69369369369369,
+    "profit_factor": 2.170761313496011,
+    "total_return_pct": 1454.9957940238583,
+    "max_dd": 10.608034581777304,
+    "calmar": 137.1597898561982,
+    "final_equity": 155499.57940238583
+  },
+  {
+    "symbol": "EURUSD",
+    "name": "Euro / US Dollar FX",
+    "is_24_7": false,
+    "total_trades": 151,
+    "win_rate": 71.52317880794702,
+    "tp1_rate": 84.76821192052981,
+    "profit_factor": 2.651775726980145,
+    "total_return_pct": 287.0428643571331,
+    "max_dd": 7.9482958196659625,
+    "calmar": 36.11376210318207,
+    "final_equity": 38704.286435713315
+  },
+  {
+    "symbol": "GBPUSD",
+    "name": "British Pound / USD FX",
+    "is_24_7": false,
+    "total_trades": 152,
+    "win_rate": 60.526315789473685,
+    "tp1_rate": 83.55263157894737,
+    "profit_factor": 2.067641239056396,
+    "total_return_pct": 176.43692030000184,
+    "max_dd": 13.482506903345218,
+    "calmar": 13.086358610076077,
+    "final_equity": 27643.692030000184
+  },
+  {
+    "symbol": "NAS100.r",
+    "name": "Nasdaq 100 Tech Index",
+    "is_24_7": false,
+    "total_trades": 168,
+    "win_rate": 55.952380952380956,
+    "tp1_rate": 98.21428571428571,
+    "profit_factor": 4.546964693966485,
+    "total_return_pct": 579.0745177282062,
+    "max_dd": 3.661001897806613,
+    "calmar": 158.17378244877244,
+    "final_equity": 67907.45177282061
+  },
+  {
+    "symbol": "XAUUSD",
+    "name": "Gold Bullion (Baseline Benchmark)",
+    "is_24_7": false,
+    "total_trades": 161,
+    "win_rate": 60.86956521739131,
+    "tp1_rate": 98.13664596273291,
+    "profit_factor": 9.82022395000537,
+    "total_return_pct": 1328.129980585714,
+    "max_dd": 3.3614770835411103,
+    "calmar": 395.10308937956836,
+    "final_equity": 142812.9980585714
+  }
+]
