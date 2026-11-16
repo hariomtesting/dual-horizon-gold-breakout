@@ -1,6 +1,8 @@
 # Credentials and private configuration
 config/mt5_account.json
 config/telegram_config.json
+config/ai_config.json
+config/*.json
 *.env
 *.key
 *.secret
