@@ -669,10 +669,32 @@ class TelegramNotifier:
             else:
                 self.send_message(caption, target_chat_id=sender_chat_id)
 
+        elif any(k in cmd for k in ["/ai", "ai", "/market", "market", "copilot", "/copilot", "analysis", "market condition"]):
+            try:
+                from execution.ai_market_analyst import ai_market_analyst
+                reply = ai_market_analyst.generate_market_condition_report(state=state)
+            except Exception as e:
+                reply = f"⚠️ AI Copilot error: {e}"
+            self.send_message(reply, target_chat_id=sender_chat_id)
+            return
+
+        elif any(k in cmd for k in ["/results", "results", "/explain", "explain", "performance review"]):
+            try:
+                from execution.ai_market_analyst import ai_market_analyst
+                reply = ai_market_analyst.explain_results_and_performance(state=state)
+            except Exception as e:
+                reply = f"⚠️ AI Copilot error: {e}"
+            self.send_message(reply, target_chat_id=sender_chat_id)
+            return
+
         elif any(k in cmd for k in ["help", "commands", "/start"]):
             reply = (
                 f"👋 <b>Hello Hari Om! I am your Gold Breakout Bot.</b>\n\n"
-                f"You and your friends can message me anytime:\n"
+                f"You can message me commands or ask questions anytime:\n"
+                f"🧠 <b>AI Market Copilot (Strictly Read-Only):</b>\n"
+                f"• <code>/market</code> or <code>/ai</code> — Real-time Gold market conditions & regime audit\n"
+                f"• <code>/explain</code> — AI explanation of trade results & performance\n"
+                f"• <i>Or ask me naturally: 'How is gold behaving?', 'Why no trade yet?'</i>\n\n"
                 f"📊 <b>Market & Performance Data:</b>\n"
                 f"• <code>/chart</code> — Live MT5 candlestick chart with 200 EMA & orders\n"
                 f"• <code>/paper</code> — Official 5-Page SSRN Academic Research Paper\n"
@@ -698,12 +720,16 @@ class TelegramNotifier:
             self.send_message(reply)
 
         else:
-            reply = (
-                f"🤖 <b>Antigravity Algo Bot</b>\n"
-                f"I received: <i>'{text}'</i>\n\n"
-                f"All systems are operational! Send <b>/status</b> to view live engine telemetry or <b>/balance</b> for equity."
-            )
-            self.send_message(reply)
+            try:
+                from execution.ai_market_analyst import ai_market_analyst
+                reply = ai_market_analyst.answer_query(text, state=state)
+            except Exception as e:
+                reply = (
+                    f"🤖 <b>Antigravity Algo Bot</b>\n"
+                    f"I received: <i>'{text}'</i>\n\n"
+                    f"All systems are operational! Send <b>/status</b> to view live engine telemetry or <b>/chart</b> for live candlesticks."
+                )
+            self.send_message(reply, target_chat_id=sender_chat_id)
 
     def _poll_updates_loop(self):
         print(f"[Telegram Listener] Starting interactive message polling thread...", flush=True)
