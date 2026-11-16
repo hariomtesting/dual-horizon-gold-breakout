@@ -95,7 +95,7 @@ def generate_live_gold_chart(output_path="reports/live_xauusd_chart.png", state=
     ax.legend(loc='upper left', facecolor='#0f172a', edgecolor='#334155', labelcolor='#cbd5e1', fontsize=8.5)
 
     plt.tight_layout()
-    plt.savefig(output_path, dpi=200, facecolor=fig.get_facecolor(), edgecolor='none')
+    plt.savefig(output_path, dpi=110, facecolor=fig.get_facecolor(), edgecolor='none')
     plt.close()
     return output_path
 
